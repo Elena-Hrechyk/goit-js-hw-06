@@ -1,0 +1,12 @@
+/* ======== Task-03 ======= */
+
+.gallery {
+  list-style: none;
+}
+
+.gallery > .item {
+  margin-bottom: 20px;
+}
+
+/* ======== Task-03 ======= */
+
