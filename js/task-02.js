@@ -12,7 +12,7 @@ const liItemEl = ingredients.map((item) => {
   const liItem = document.createElement("li");
   liItem.textContent = item;
   liItem.classList.add("item");
-  list.append(liItem);
+  return liItem;
 });
 
-console.dir(list.children);
+list.append(...liItemEl);

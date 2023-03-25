@@ -12,7 +12,7 @@ function onFormSubmit (event) {
     elements: { email, password }
   } = event.currentTarget;
   
-  if (email.value === "" || password.value === "") {
+  if (email.value.trim() === "" || password.value.trim() === "") {
     console.log("Please fill in all the fields!");
     return alert("Please fill in all the fields!");
   }
@@ -34,7 +34,7 @@ function onFormSubmit (event) {
 //   const formData = new FormData(event.currentTarget);
 
 //   formData.forEach((value, name) => {
-//     if (value === '') {
+//     if (value.trim() === '') {
 //       alert(`You must enter a ${name}`);
 //     }
 //   });
